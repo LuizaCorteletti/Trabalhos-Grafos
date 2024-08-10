@@ -74,6 +74,25 @@ void removeFim (No *&cabeca) {
     
 }
 
+void busca (No *n, int val) { 
+    while (n != NULL)
+    {
+        if (n->num == val)
+        {
+            cout << "\nValor Encontrado!\n";
+            return;
+        }
+        else
+        {
+            n = n->prox;
+        }
+        
+    }
+    cout << "\nValor Nao Encontrado!\n";
+    
+    
+}
+
 
 
 int main() {
@@ -91,6 +110,7 @@ int main() {
         cout << "[1] - Inserir\n";
         cout << "[2] - Remover\n";
         cout << "[3] - Imprimir lista\n";
+        cout << "[4] - Buscar elemento\n";
         cout << "[0] - Encerrar\n";
         cout << "\n";
         cin >> escolha;
@@ -117,6 +137,13 @@ int main() {
 
         case 3:
             imprime(n1);
+            cout << "\n";
+            break;
+
+        case 4:
+            cout << "\nDigite o valor a ser buscado: ";
+            cin >> valor;
+            busca(n1, valor);
             cout << "\n";
             break;
         
