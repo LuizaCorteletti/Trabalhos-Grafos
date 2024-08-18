@@ -8,6 +8,7 @@ Luiza Dias Corteletti - 816706
 #include "grafo.h"
 #include <cmath>
 #include <iostream>
+using namespace std;
 
 int fat (int i){
     if(i < 2){
@@ -41,8 +42,15 @@ int subgCount(int vertice){
 
 
 int main(){
-    std::cout<<subgCount(6)<<"\n";
-    labelGen(6);
-    //std::cout<< subgCount(4) << "\n";
-    //SubGraph(4);
+
+    int n;
+
+    cout << "\nDigite o numero de vertices do grafo: ";
+    cin >> n;
+    cout << "\n";
+
+    labelGen(n);
+
+    cout<< "\nNumero de Subgrafos Totais: " << subgCount(n) << "\n";
+
 }

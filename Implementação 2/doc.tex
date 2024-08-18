@@ -1,0 +1,61 @@
+GRUPO:
+    Gabriel Martins Rajão - 801792
+    Luiza Dias Corteletti - 816706
+
+# matriz.h #
+
+    Criamos essa classe para construir as representações dos grafos onde as linhas representam 
+    os vértices e as colunas as arestas. 
+
+# grafo.h #
+
+    classe Grafo:
+
+    Criamos essa classe Grafo para representar e manipular grafos de maneira eficiente. A classe
+    possui o método fazGraComp que  configura o grafo como completo, ou seja, todas as arestas 
+    entre os vértices são definidas como 1, exceto as diagonais (loops), que são definidas 
+    como 0.
+
+    GeraSubgrafos:
+
+    Implementamos essa função, para gerar e imprimir todos os subgrafos possíveis de um grafo 
+    completo com um número específico de vértices. A função faz isso gerando todas as 
+    combinações possíveis de arestas, representadas como strings de "0" e "1", onde "0" indica 
+    a ausência de uma aresta e "1" indica sua presença.
+    Exemplo: Caso a função receba 2 vértices como parâmetro é calculado o número de vértices
+    (2*1/2 = 1 aresta). Para essa 1 aresta podem ser gerados os valores 1 e 0:
+    1: 
+        1: [0,1]
+        2: [1,0]
+    0: 
+        1: [0,0]
+        2: [0,0]
+
+
+    allOpt:
+
+    Desenvolvemos essa função para gerar todas as combinações possiveis entre os vértices de um
+    grafo completo e em seguida usar essas combinações para gerar os subgrafos usando a função
+    anterior (GeraSubgrafos).
+    
+    labelGen:
+
+    Função que recebe a quantidade de vértices do grafo e chama a função allOpt para calcular 
+    todos os subgrafos possíveis. 
+
+# main.cpp #
+
+    fat:
+
+    Função que calcula o fatorial de um número.
+
+    subgCount:
+
+    Criamos essa função para calcular o número total de subgrafos de um grafo completo 
+    utilizando a equação passada em sala. 
+
+    main:
+
+    Contruimos um menu simples para que o usuário digite o número de vértices do grafo a ter 
+    seus subgrafos gerados e depois receba o número de subgrafos possíveis e uma representação
+    visual para cada um deles. 

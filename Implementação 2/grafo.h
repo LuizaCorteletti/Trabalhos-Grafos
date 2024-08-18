@@ -47,7 +47,7 @@ class Grafo: public Linha{
             temp->print();
             temp = temp->prox;
         }
-        std::cout <<"=============="<<"=============="<<"==============\n";
+        std::cout <<"=============="<<"=============="<<"==============\n\n";
     }
 };
 
@@ -72,7 +72,7 @@ void GeraSubgrafos( int vertice, std::string str, std::string label){
         } else {
             std::cout <<"==============" <<"PrintandoGrafo "<<counter++<<"==============\n";
             std::cout<<label<<": []\n";
-            std::cout <<"=============="<<"=============="<<"==============\n";
+            std::cout <<"=============="<<"=============="<<"==============\n\n";
             }
     }
 }
